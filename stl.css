@@ -1,0 +1,27 @@
+
+/* Todos los elementos <i> tienen la misma imagne asociada y las mismas dimensiones */
+i{
+    background-image:url(https://cdn.tutsplus.com/net/uploads/2013/05/32pixel-icons-2.png);
+    display:inline-block;
+    width:34px;
+    height:33px;
+  }
+  
+  /* Para cada elemento, debo posicionar el fondo (la img) para que muestre justo el icono que quiero mostrar */
+  .facebook{background-position: -226px -54px;}
+  .mail{background-position: -55px -54px;}
+  .dribble{background-position: -112px -54px;}
+  
+  /* Luego, para cada elemento ajusto la posición del fondo para mostrar el icono en color */
+  .facebook:hover{background-position: -226px -128px;}
+  .mail:hover{background-position: -55px -129px;}
+  .dribble:hover{background-position: -112px -128px;}
+  
+  /* Las líneas 11, 12 y 13 pueden ser substituídas por la siguiente- ¿Por qué? */
+  /*i:hover{background-position-y: -128px;}*/
+  
+  /* Descomentar la línea y observar la diferencia del efecto */
+  i{
+    transition:all 0.5s;
+  }
+  
